@@ -1,0 +1,34 @@
+@startuml
+class com.algonquin.cst8288.assignment1.controller.EmployeeController
+class com.algonquin.cst8288.assignment1.controller.Main
+class com.algonquin.cst8288.assignment1.controller.Rate
+class com.algonquin.cst8288.assignment1.employee.Employee
+class com.algonquin.cst8288.assignment1.persistence.Formatter
+class com.algonquin.cst8288.assignment1.persistence.JSONFormatter
+class com.algonquin.cst8288.assignment1.persistence.TextFormatter
+class com.algonquin.cst8288.assignment1.service.ContractEmployeeImpl
+class com.algonquin.cst8288.assignment1.service.EmployeeService
+class com.algonquin.cst8288.assignment1.service.PermanentEmployeeImpl
+class com.algonquin.cst8288.assignment1.service.PersistenceService
+class com.algonquin.cst8288.assignment1.service.PersistenceServiceImpl
+class java.io.IOException
+class java.util.ArrayList
+class java.util.List
+com.algonquin.cst8288.assignment1.controller.EmployeeController ..> com.algonquin.cst8288.assignment1.employee.Employee
+com.algonquin.cst8288.assignment1.controller.EmployeeController ..> com.algonquin.cst8288.assignment1.persistence.Formatter
+com.algonquin.cst8288.assignment1.controller.EmployeeController ..> com.algonquin.cst8288.assignment1.persistence.JSONFormatter
+com.algonquin.cst8288.assignment1.controller.EmployeeController ..> com.algonquin.cst8288.assignment1.service.EmployeeService
+com.algonquin.cst8288.assignment1.controller.EmployeeController ..> com.algonquin.cst8288.assignment1.service.PersistenceService
+com.algonquin.cst8288.assignment1.controller.EmployeeController ..> java.io.IOException
+com.algonquin.cst8288.assignment1.controller.EmployeeController ..> java.util.ArrayList
+com.algonquin.cst8288.assignment1.controller.EmployeeController ..> java.util.List
+com.algonquin.cst8288.assignment1.controller.Main ..> com.algonquin.cst8288.assignment1.employee.Employee
+com.algonquin.cst8288.assignment1.controller.Main ..> com.algonquin.cst8288.assignment1.persistence.JSONFormatter
+com.algonquin.cst8288.assignment1.controller.Main ..> com.algonquin.cst8288.assignment1.persistence.TextFormatter
+com.algonquin.cst8288.assignment1.controller.Main ..> com.algonquin.cst8288.assignment1.service.ContractEmployeeImpl
+com.algonquin.cst8288.assignment1.controller.Main ..> com.algonquin.cst8288.assignment1.service.EmployeeService
+com.algonquin.cst8288.assignment1.controller.Main ..> com.algonquin.cst8288.assignment1.service.PermanentEmployeeImpl
+com.algonquin.cst8288.assignment1.controller.Main ..> com.algonquin.cst8288.assignment1.service.PersistenceService
+com.algonquin.cst8288.assignment1.controller.Main ..> com.algonquin.cst8288.assignment1.service.PersistenceServiceImpl
+com.algonquin.cst8288.assignment1.controller.Main ..> java.io.IOException
+@enduml
